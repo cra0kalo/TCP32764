@@ -36,11 +36,11 @@ Partial Class GUI_Main
         Me.Button5 = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ConsoleWindow1 = New TCP32764.ConsoleWindow()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -91,10 +91,10 @@ Partial Class GUI_Main
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.CheckVunCheckbox)
         Me.GroupBox1.Controls.Add(Me.Dump_ConfCheckbox)
         Me.GroupBox1.Controls.Add(Me.Dump_CredCheckbox)
-        Me.GroupBox1.Controls.Add(Me.ShapeContainer1)
         Me.GroupBox1.Font = New System.Drawing.Font("MS Reference Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 115)
         Me.GroupBox1.Name = "GroupBox1"
@@ -189,24 +189,6 @@ Partial Class GUI_Main
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(123, 17)
         Me.ToolStripStatusLabel1.Text = "Scfgmgr backdoor 1.0"
         '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(3, 17)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(328, 74)
-        Me.ShapeContainer1.TabIndex = 12
-        Me.ShapeContainer1.TabStop = False
-        '
-        'LineShape1
-        '
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 20
-        Me.LineShape1.X2 = 20
-        Me.LineShape1.Y1 = 32
-        Me.LineShape1.Y2 = 50
-        '
         'ConsoleWindow1
         '
         Me.ConsoleWindow1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -219,6 +201,16 @@ Partial Class GUI_Main
         Me.ConsoleWindow1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.ConsoleWindow1.Size = New System.Drawing.Size(334, 96)
         Me.ConsoleWindow1.TabIndex = 2
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.TCP32764.My.Resources.Resources.line
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 49)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(9, 23)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
         '
         'GUI_Main
         '
@@ -247,6 +239,7 @@ Partial Class GUI_Main
         Me.GroupBox1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -265,7 +258,6 @@ Partial Class GUI_Main
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents CheckVunCheckbox As System.Windows.Forms.CheckBox
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class

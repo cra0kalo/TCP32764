@@ -167,7 +167,6 @@ Public Class GUI_Main
                 If PEndian <> ByteOrder.UnknownEndian Then
 
                     ConsoleWindow1.PrintLine("Gateway is vulnerable!")
-
                     Dim Csocket As New Socket(SocketType.Stream, ProtocolType.Tcp)
                     Csocket.Connect(TextBox1.Text, 32764)
 
