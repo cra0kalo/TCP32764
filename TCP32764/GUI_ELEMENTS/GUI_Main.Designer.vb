@@ -36,9 +36,9 @@ Partial Class GUI_Main
         Me.Button5 = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ConsoleWindow1 = New TCP32764.ConsoleWindow()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.ConsoleWindow1 = New TCP32764.ConsoleWindow()
         Me.GroupBox1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -148,7 +148,7 @@ Partial Class GUI_Main
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(145, 20)
         Me.TextBox1.TabIndex = 7
-        Me.TextBox1.Text = "192.168.1.1"
+        Me.TextBox1.Text = "0.0.0.0"
         '
         'Label1
         '
@@ -189,19 +189,6 @@ Partial Class GUI_Main
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(123, 17)
         Me.ToolStripStatusLabel1.Text = "Scfgmgr backdoor 1.0"
         '
-        'ConsoleWindow1
-        '
-        Me.ConsoleWindow1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ConsoleWindow1.Location = New System.Drawing.Point(12, 244)
-        Me.ConsoleWindow1.Multiline = True
-        Me.ConsoleWindow1.Name = "ConsoleWindow1"
-        Me.ConsoleWindow1.ReadOnly = True
-        Me.ConsoleWindow1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.ConsoleWindow1.Size = New System.Drawing.Size(334, 96)
-        Me.ConsoleWindow1.TabIndex = 2
-        '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(3, 17)
@@ -219,6 +206,19 @@ Partial Class GUI_Main
         Me.LineShape1.X2 = 20
         Me.LineShape1.Y1 = 32
         Me.LineShape1.Y2 = 50
+        '
+        'ConsoleWindow1
+        '
+        Me.ConsoleWindow1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ConsoleWindow1.Location = New System.Drawing.Point(12, 244)
+        Me.ConsoleWindow1.Multiline = True
+        Me.ConsoleWindow1.Name = "ConsoleWindow1"
+        Me.ConsoleWindow1.ReadOnly = True
+        Me.ConsoleWindow1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.ConsoleWindow1.Size = New System.Drawing.Size(334, 96)
+        Me.ConsoleWindow1.TabIndex = 2
         '
         'GUI_Main
         '
